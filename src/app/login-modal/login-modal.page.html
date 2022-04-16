@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<form (ngSubmit)="openUsers()" [formGroup]="loginForm">
+  <ion-input type="name" formControlName="email" required></ion-input>
+  <ion-input type="password" formControlName="password" required></ion-input>
+  <ion-button type="submit">Login</ion-button>
+</form>
+
+</ion-content>

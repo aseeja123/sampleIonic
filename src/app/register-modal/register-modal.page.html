@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>register-modal</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form>
+    <ion-input type="name" [(ngModel)]="obj.email" name="email" required></ion-input>
+    <ion-input type="password" [(ngModel)]="obj.password" name="password" required></ion-input>
+    <ion-button (click)="onRegister()">Register</ion-button>
+  </form>
+</ion-content>
